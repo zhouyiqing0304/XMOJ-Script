@@ -936,19 +936,19 @@ async function main() {
                                              <li class="dropdown-item">插件更新日志</li>
                                              <li class="dropdown-item">注销</li>`;
                             PopupUL.children[0].addEventListener("click", () => {
-                                location.href = "https://www.xmoj.tech/modifypage.php";
+                                window.open("https://www.xmoj.tech/modifypage.php", "_blank");
                             });
                             PopupUL.children[1].addEventListener("click", () => {
-                                location.href = "https://www.xmoj.tech/userinfo.php?user=" + CurrentUsername;
+                                window.open("https://www.xmoj.tech/userinfo.php?user=" + CurrentUsername, "_blank");
                             });
                             PopupUL.children[2].addEventListener("click", () => {
-                                location.href = "https://www.xmoj.tech/mail.php";
+                                window.open("https://www.xmoj.tech/mail.php", "_blank");
                             });
                             PopupUL.children[3].addEventListener("click", () => {
-                                location.href = "https://www.xmoj.tech/index.php?ByUserScript=1";
+                                window.open("https://www.xmoj.tech/index.php?ByUserScript=1", "_blank");
                             });
                             PopupUL.children[4].addEventListener("click", () => {
-                                location.href = "https://www.xmoj.tech/modifypage.php?ByUserScript=1";
+                                window.open("https://www.xmoj.tech/modifypage.php?ByUserScript=1", "_blank");
                             });
                             PopupUL.children[5].addEventListener("click", () => {
                                 localStorage.removeItem("UserScript-Username");
